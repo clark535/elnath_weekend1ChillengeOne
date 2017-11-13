@@ -14,7 +14,7 @@ Step 1
 ---
 
 - get user inputs
-- create emplyee object
+- create employee object
 - push employee object into an "employees" array
 
 Step 2
