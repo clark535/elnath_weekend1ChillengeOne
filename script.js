@@ -21,4 +21,19 @@ function addEmployeeButtonClick(){
     // push the new object into an array
     employees.push( newEmployee );
     console.log( employees );
+    calculateSalaries();
 } // end addEmployeeButtonClick
+
+function calculateSalaries(){
+    console.log( 'in calculateSalaries' );
+    // loop through employees array
+    var totalSalaries = 0;
+    for( var i = 0; i< employees.length; i++ ){
+        // convert each salary to a number
+        // add salary to total salaries
+        totalSalaries += Number( employees[ i ].salary );
+    } // end for each employee
+    console.log( 'total salaries:', totalSalaries );
+    var monthlySalaryCost = totalSalaries / 12;
+    console.log( 'monthly salary cost:', monthlySalaryCost );
+} // end calculateSalaries
