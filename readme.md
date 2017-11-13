@@ -10,7 +10,7 @@ Elnath Weekend Challenge 1 Live Solve
 - source scripts
 - on click event handler
 
-Step 1
+[Step 1](https://github.com/devjanaprime/elnath_weekend1ChillengeOne/commit/4622ae5ca80adde2098f498c4f4cd097ddf2f501)
 ---
 
 - get user inputs
