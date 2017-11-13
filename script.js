@@ -4,6 +4,14 @@ var employees = [];
 function readyNow(){
     // on click event handler for the add employee button
     $( '#addEmployeeButton' ).on( 'click', addEmployeeButtonClick );
+    $( document ).on( 'click', '.removeButton', function(){
+        // get the value of "data-index" on this button
+        var myIndex = $( this ).data( 'index' );
+        console.log( 'in document on click .removeButton:', myIndex );
+        // remove this employee from array
+        employees.splice( myIndex, 1 );
+        calculateSalaries();
+    }); //end document on click .removeButton
 } // end doc ready
 
 function addEmployeeButtonClick(){
@@ -65,6 +73,7 @@ function displayOutput( salaries, monthly ){
         appendString += ': ' + employees[ i ].employeeId + ', ';
         appendString += employees[ i ].jobDescription + ', ';
         appendString += '$' + Number( employees[ i ].salary ).toFixed( 2 );
+        appendString += '<button data-index="' + i + '" class="removeButton">Remove</button>';
         appendString += '</li>';
         $( '#employeesOut' ).append( appendString );
     } // end all eployees
