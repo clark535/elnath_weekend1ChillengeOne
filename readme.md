@@ -17,7 +17,7 @@ Elnath Weekend Challenge 1 Live Solve
 - create employee object
 - push employee object into an "employees" array
 
-Step 2
+[Step 2](https://github.com/devjanaprime/elnath_weekend1ChillengeOne/commit/069d94a4f9bb425c0999ec8a7f50c26d2b907169)
 ---
 
 - calculate total salaries
